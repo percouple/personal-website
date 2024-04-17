@@ -1,19 +1,11 @@
 import React from "react";
 import styled from 'styled-components';
+import { StyledButton } from "../styles/universalStyles";
 
-const StyledButton = styled.button`
-    border-radius: 10px;
-    background-color: transparent;
-    color: rgb(89, 178, 129);
-    border: solid rgb(89, 178, 129) .2rem;
+const LinkButton = styled(StyledButton)`
+    border-width: 0.2rem;
     min-height: 2rem;
     min-width: 10rem;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-
-    &:hover {
-        background-color: rgba(54, 56, 68);
-    }
 `
 
 export default function Project({entry}) {
@@ -21,9 +13,15 @@ export default function Project({entry}) {
         window.location.href = entry.url
     }
 
+    const image = '../data' + entry.imgUrl;
+
+    // console.log(image)
+
     return <>
+            <img src={image} alt="stuff"></img>
             <h3>{entry.name}</h3>
-            <div style={{marginBottom: '1rem'}}>{entry.description}</div>
-            <StyledButton onClick={clickHandler}>Go to</StyledButton>
+            <div style={{marginBottom: '1rem', backgroundImage: entry.imgUrl}}>{entry.description}</div>
+            <h5>{entry.stack}</h5>
+            <LinkButton onClick={clickHandler}>Go to</LinkButton>
         </>
 }
