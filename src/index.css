@@ -1,17 +1,31 @@
 body {
+  --primary-color: #222222; /* Adjusted RGB values */
+  --secondary-color: #BDC4A7; /* Adjusted RGB values */
+  --secondary-highlight-color: #317a23; /* Adjusted RGB values */
+  --tertiary-color: #F17F29; /* Adjusted RGB values */
+  --tertiary-highlight-color: #5C95FF;
+
   margin: 0;
-  font-family: 'Space Grotesk', 'Cormorant Garamond', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Space Grotesk', 'Playfair Display', 'Cormorant Garamond', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgba(34, 36, 48);
-  color: rgb(89, 178, 129);
+  font-weight: 500;
+  
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  scrollbar-width: auto;
+
 }
+/* 'Space Grotesk', 'Cormorant Garamond' */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::selection {
+  background-color: #3a91285c;
+  color: rgb(226, 226, 226);
 }
 
 .cormorant-garamond-light {

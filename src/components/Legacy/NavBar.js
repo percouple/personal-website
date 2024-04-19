@@ -1,8 +1,8 @@
 import React from "react";
-import Home from './Home';
-import About from './ConnectFooter';
+import Home from '../Home';
+import About from '../Footers/Connect';
 import Thoughts from './Thoughts';
-import Projects from './Projects';
+import Projects from '../Projects';
 import styled from 'styled-components';
 // import { blogData } from "../data/blog-data";
 import { BrowserRouter as Link, Routes, Route } from 'react-router-dom';
