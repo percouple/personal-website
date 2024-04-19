@@ -4,6 +4,7 @@
   flex-direction: column;
   align-items: center;
   padding-left: 26px;
+  scroll-behavior: smooth;
 }
 
 /* Customize website's scrollbar like Mac OS

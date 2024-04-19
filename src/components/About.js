@@ -17,10 +17,19 @@ const AboutCard = styled.span`
     max-width: 33vw;
 `;
 
-const ImageCard = styled.img`
+const PortraitCard = styled.img`
     max-width: 200px;
     max-height: auto;
+    box-shadow: 10px 10px 0 0 #ffffff;
+    padding: 10px;
+    border: solid #5C95FF 4px;
+    border-radius: 5%;
+    z-index: 1;
 `;
+
+const PortraitCardBoxShadow = styled.div`
+
+`
 
 export default function About () {
 
@@ -30,7 +39,9 @@ export default function About () {
                 <div>About</div>
                 <span>I did some stuff and some things for people and did music and stuff</span>
             </AboutCard>
-            <ImageCard src="/photos/portrait.jpeg"></ImageCard>
+            <PortraitCardBoxShadow>
+                <PortraitCard src="/photos/portrait.jpeg"></PortraitCard>
+            </PortraitCardBoxShadow>
         </StyledWelcomeCard>
     )
 }

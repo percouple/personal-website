@@ -8,12 +8,15 @@ const LeftProject = styled(StyledProject)`
   text-align: left;
   background-color: #bdc4a7;
   color: #222222;
+  margin-right: 10vw;
+  margin-top: 2rem;
 `;
 
 const RightProject = styled(StyledProject)`
   text-align: right;
   background-color: #2E2E2E;
-  /* max-width: 50vw; */
+  margin-left: 10vw;
+  margin-top: 2rem;
 `;
 
 const StyledProjectContainer = styled.div`
@@ -22,7 +25,7 @@ const StyledProjectContainer = styled.div`
   margin-left: 3rem;
   margin-right: 3rem;
   margin-top: 10vh;
-  margin-bottom: 15vh;
+  margin-bottom: 10vh;
   flex-direction: column;
 `;
 
