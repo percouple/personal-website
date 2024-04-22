@@ -9,9 +9,10 @@ const StyledIntroContainer = styled.div`
 const StyledWelcomeParagraph = styled.div`
   display: flex;
   justify-content: flex-end;
-  font-size: 12px;
+  font-size: 14px;
   text-align: right;
   max-width: 66vw;
+  max-width: 500px;
 `;
 
 const HeroName = styled.h1`
@@ -23,14 +24,13 @@ const HeroName = styled.h1`
 
 export default function Home() {
   return (
-    <div>
+    <div id="home">
       <StyledIntroContainer>
         <h3 style={{marginBottom: "0px"}}>HELLO, I'm</h3>
         <HeroName>Caleb</HeroName>
         <StyledWelcomeParagraph>
-          I'm a developer eager to craft engaging experiences
-          tailored for entry-level learners, fostering a supportive environment
-          for growth and skill development. Currently, I'm building projects
+          I'm a software developer eager to craft engaging experiences
+          tailored for entry-level learners. Currently, I'm building projects
           geared towards expanding my proficiency across various coding
           languages and platforms, enriching my versatility in
           software development.

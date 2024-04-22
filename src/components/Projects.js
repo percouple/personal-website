@@ -31,7 +31,7 @@ const StyledProjectContainer = styled.div`
 
 export default function Projects() {
   return (
-    <StyledProjectContainer>
+    <StyledProjectContainer id="projects">
       {projectsData.map((entry, index) => {
         if (index % 2 === 0) {
           return (
