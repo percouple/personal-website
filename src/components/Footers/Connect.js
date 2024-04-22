@@ -5,7 +5,7 @@ import {
   StyledInputField,
 } from "../../styles/universalStyles";
 import IconButton from "./IconButton";
-import * as data from '../../data/projects-data';
+import * as data from '../../data/site-data';
 
 const SubjectField = styled(StyledInputField)`
   min-height: 1.25rem;

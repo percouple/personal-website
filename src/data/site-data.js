@@ -9,7 +9,7 @@ export const projectsData = [
         name: "Metronome App",
         url: "https://www.youtube.com/",
         githubUrl: false,
-        description: "A metronome accessible by internet browser",
+        description: "Easily accessible metronome function for universal use. Utilizing primary Java for this build, I'm constructing a product that has ",
         imgUrl: "",
         stack: "Java, Maven",
     },

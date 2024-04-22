@@ -1,6 +1,6 @@
 import React from "react";
 import Project from "./Project";
-import { projectsData } from "../data/projects-data";
+import { projectsData } from "../data/site-data";
 import styled from "styled-components";
 import { StyledProject } from "../styles/universalStyles";
 
