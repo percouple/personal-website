@@ -3,9 +3,21 @@ import githubIcon from './icons/github-small-blue.svg';
 
 export const projectsData = [
     {
-        id: 1,
+        id: 4,
         date: "01-30-2024",
-        status: "In the works",
+        complete: false,
+        name: "Metronome App",
+        url: "https://www.youtube.com/",
+        githubUrl: false,
+        description: "Easily accessible metronome function for universal use. Utilizing primary Java for this build, I'm constructing a product that has ",
+        imgUrl: "",
+        stack: "Java, Maven",
+    },
+
+    {
+        id: 3,
+        date: "01-30-2024",
+        complete: false,
         name: "Metronome App",
         url: "https://www.youtube.com/",
         githubUrl: false,
@@ -17,7 +29,7 @@ export const projectsData = [
     {
         id: 2,
         date: "01-30-2024",
-        status: "Live",
+        complete: false,
         name: "NASA Image Generator",
         url: "https://www.nasa.gov/",
         githubUrl: "www.github.com",
@@ -27,9 +39,9 @@ export const projectsData = [
     },
 
     {
-        id: 3,
+        id: 1,
         date: "03-14-2024",
-        status: "Live",
+        complete: false,
         name: "Browser Timesheet",
         url: "https://www.nasa.gov/",
         githubUrl: "www.github.com",

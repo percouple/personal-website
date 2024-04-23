@@ -2,9 +2,12 @@ import React from "react";
 import Project from "./Project";
 import { projectsData } from "../data/site-data";
 import styled from "styled-components";
-import { StyledProject } from "../styles/universalStyles";
 
-const LeftProject = styled(StyledProject)`
+const LeftProject = styled.div`
+  padding: 2rem;
+  size: auto;
+  box-shadow: 10px 10px 0 var(--tertiary-color);
+  margin-bottom: 2rem;
   text-align: left;
   background-color: #bdc4a7;
   color: #222222;
@@ -12,7 +15,11 @@ const LeftProject = styled(StyledProject)`
   margin-top: 2rem;
 `;
 
-const RightProject = styled(StyledProject)`
+const RightProject = styled.div`
+  padding: 2rem;
+  size: auto;
+  box-shadow: 10px 10px 0 var(--secondary-highlight-color);
+  margin-bottom: 2rem;
   text-align: right;
   background-color: #2e2e2e;
   margin-left: 10vw;

@@ -35,7 +35,6 @@ const FormSocialContainer = styled.div`
   margin: auto;
   max-width: 50rem;
   justify-content: center;
-  align-items: center;
 `;
 
 const FormContainer = styled.div`
@@ -46,7 +45,7 @@ const FormContainer = styled.div`
 
 const SocialContainer = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: start;
 `;
 
@@ -93,7 +92,7 @@ export default function Connect() {
   return (
     <div id="connect">
       <h3>Questions? Or looking to collaborate?</h3>
-      <h3>Connect with me here!</h3>
+      <h4>Connect with me here!</h4>
       <FormSocialContainer>
         <FormContainer>
           <SubjectField placeholder="Subject" onChange={changeHandler}></SubjectField>

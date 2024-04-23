@@ -31,10 +31,3 @@ export const StyledButton = styled.button`
   }
   
 `;
-
-export const StyledProject = styled.div`
-  padding: 2rem;
-  size: auto;
-  box-shadow: 10px 10px 0 var(--secondary-highlight-color);
-  margin-bottom: 2rem;
-`;

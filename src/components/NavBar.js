@@ -1,8 +1,4 @@
 import React from "react";
-import Home from "./Home";
-import About from "./Footers/Connect";
-import Thoughts from "./Legacy/Thoughts";
-import Projects from "./Projects";
 import styled from "styled-components";
 
 const StyledNav = styled.div`
@@ -18,6 +14,7 @@ const StyledNav = styled.div`
   top: 0px;
   z-index: 1000;
   box-shadow: 0px 3px 0px #f17f29;
+  min-width: 600px;
 `;
 
 const NavButton = styled.button`
@@ -54,7 +51,7 @@ export default function NavBar() {
 
   return (
     <StyledNav>
-      <div style={{ paddingLeft: "2rem" }}>calebsevan@gmail.com</div>
+      <div style={{ paddingLeft: "2rem" }}>Contact me!</div>
       <NavButtonContainer>
         {/* prettier-ignore */}
         <NavButton onClick={() => scrollToSection("about")}>About</NavButton>
