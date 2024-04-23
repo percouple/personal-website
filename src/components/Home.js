@@ -9,7 +9,7 @@ const StyledIntroContainer = styled.div`
   padding-right: 13px;
   padding-bottom: 13px;
   min-width: max-content;
-  scroll-margin-top: 15rem;
+  scroll-margin-top: 25vh;
 `;
 
 const StyledWelcomeParagraph = styled.div`
@@ -26,21 +26,21 @@ const StyledCorner = styled.div`
   width: 384px;
   height: 46px;
   top: 420px;
-  background-color: #F17F29;
+  background-color: #5C95FF;
   z-index: -1;
   margin-left: 135px;
 `;
 
 const HeroName = styled.h1`
-  color: #5c95ff;
-  text-shadow: 3px 2px 0 #f17f29;
+  color: #F17F29;
+  text-shadow: 3px 2px 0 #BDC4A7;
   font-size: 5rem;
   margin: 0;
 `;
 
 export default function Home() {
   return (
-    <div style={{display: "flex", justifyContent: "center"}}>
+    <div style={{display: "flex", justifyContent: "center", marginBottom: "7rem"}}>
       <StyledCorner></StyledCorner>
       <StyledIntroContainer id="home">
         <h3 style={{ marginBottom: "0px", fontStyle: "italic" }}>Hello, I'm</h3>

@@ -56,7 +56,6 @@ const initialValues = {
 
 export default function Connect() {
   let [values, setValues] = useState(initialValues);
-  let [errorMessage, setErrorMessage] = useState("");
 
   const changeHandler = (e) => {
     switch (true) {

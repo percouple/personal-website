@@ -9,7 +9,7 @@ const StyledNav = styled.div`
   width: 100vw;
   height: auto;
   margin-bottom: 2rem;
-  padding-top: .5rem;
+  padding-top: 0.5rem;
   position: sticky;
   top: 0px;
   z-index: 1000;
@@ -24,14 +24,18 @@ const NavButton = styled.button`
   margin-bottom: 1rem;
   min-height: 1rem;
   min-width: 5rem;
-  border: solid #222222 1px;
+  border: none;
   font-family: "Space Grotesk";
-  font-weight: 500;
+  font-weight: 700;
   color: #bdc4a7;
   background-color: #317a23;
-  transition: background-color 0.2s ease;
+  box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.3);
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color .5s ease;
+
   &:hover {
     background-color: #5c95ff;
+    box-shadow: 1px 1px 7px rgba(100, 100, 100, 1);
+    color: #222222;
   }
 `;
 
