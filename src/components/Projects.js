@@ -31,19 +31,20 @@ const StyledProjectContainer = styled.div`
   max-width: 900px;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: .5rem;
   margin-bottom: 10rem;
   flex-direction: column;
 `;
 
 const ProjectHeader = styled.h2`
   margin-top: 15rem;
+  scroll-margin-top: 5rem;
+  margin-left: 1rem;
 `;
 
 export default function Projects() {
   return (
-    <div id="projects">
-      <ProjectHeader>
+    <div>
+      <ProjectHeader id="projects">
         Here's what I've been working on:
       </ProjectHeader>
       <StyledProjectContainer>

@@ -9,6 +9,7 @@ const StyledIntroContainer = styled.div`
   padding-right: 13px;
   padding-bottom: 13px;
   min-width: max-content;
+  scroll-margin-top: 15rem;
 `;
 
 const StyledWelcomeParagraph = styled.div`
