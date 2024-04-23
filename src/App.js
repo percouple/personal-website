@@ -1,5 +1,4 @@
 import NavBar from "./components/NavBar";
-import "./App.css";
 import About from "./components/About";
 // import Header from './components/Header';
 import Home from "./components/Home";
@@ -18,6 +17,8 @@ const BodyStyles = styled.div`
   ::-webkit-scrollbar {
     background-color: #fff;
     width: 26px;
+
+    /* 26px; */
   }
 
   ::-webkit-scrollbar-track {
@@ -32,19 +33,21 @@ const BodyStyles = styled.div`
   ::-webkit-scrollbar-button {
     display: none;
   }
+
 `;
 
 function App() {
+  
   return (
-    <>
-      <NavBar />
+    <div style={{position: "relative"}}>
+      <NavBar/>
       <BodyStyles>
-        <Home />
-        <About />
-        <Projects />
-        <Connect />
+        <Home/>
+        <About/>
+        <Projects/>
+        <Connect/>
       </BodyStyles>
-    </>
+    </div>
   );
 }
 

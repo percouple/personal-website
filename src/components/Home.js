@@ -3,7 +3,10 @@ import styled from "styled-components";
 
 const StyledIntroContainer = styled.div`
   margin-top: 10rem;
-  margin-bottom: 6rem;
+  margin-bottom: 15rem;
+  background-color: #222222;
+  box-shadow: -10px -10px 0 10px green;  
+
 `;
 
 const StyledWelcomeParagraph = styled.div`
@@ -24,10 +27,10 @@ const HeroName = styled.h1`
 
 export default function Home() {
   return (
-    <div id="home">
-      <StyledIntroContainer>
-        <h3 style={{marginBottom: "0px"}}>HELLO, I'm</h3>
-        <HeroName>Caleb</HeroName>
+    <div id="home" style={{backgroundColor: "#BDC4A7" }}>
+      <StyledIntroContainer> Styled intro container
+        <h3 style={{marginBottom: "0px", fontStyle: "italic"}}>Hello, I'm</h3>
+        <HeroName>Caleb.</HeroName>
         <StyledWelcomeParagraph>
           I'm a software developer eager to craft engaging experiences
           tailored for entry-level learners. Currently, I'm building projects

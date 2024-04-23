@@ -91,7 +91,7 @@ export default function Connect() {
   }, [values]);
 
   return (
-    <div>
+    <div id="connect">
       <h3>Questions? Or looking to collaborate?</h3>
       <h3>Connect with me here!</h3>
       <FormSocialContainer>

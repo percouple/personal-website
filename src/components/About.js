@@ -44,7 +44,7 @@ const PortraitCard = styled.img`
 
 export default function About() {
   return (
-    <div id="About">
+    <div id="about" style={{scrollMargin: "90px"}}>
       <StyledBackground></StyledBackground>
       <StyledWelcomeCard>
         <AboutText>About</AboutText>

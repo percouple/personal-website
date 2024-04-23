@@ -14,7 +14,7 @@ const LeftProject = styled(StyledProject)`
 
 const RightProject = styled(StyledProject)`
   text-align: right;
-  background-color: #2E2E2E;
+  background-color: #2e2e2e;
   margin-left: 10vw;
   margin-top: 2rem;
 `;
@@ -24,29 +24,38 @@ const StyledProjectContainer = styled.div`
   max-width: 900px;
   margin-left: 3rem;
   margin-right: 3rem;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: .5rem;
+  margin-bottom: 10rem;
   flex-direction: column;
+`;
+
+const ProjectHeader = styled.h2`
+  margin-top: 15rem;
 `;
 
 export default function Projects() {
   return (
-    <StyledProjectContainer id="projects">
-      {projectsData.map((entry, index) => {
-        if (index % 2 === 0) {
-          return (
-            <LeftProject key={entry.id}>
-              <Project entry={entry} isRight={false}/>
-            </LeftProject>
-          );
-        } else {
-          return (
-            <RightProject key={entry.id}>
-              <Project entry={entry} isRight={true}/>
-            </RightProject>
-          );
-        }
-      })}
-    </StyledProjectContainer>
+    <div id="projects">
+      <ProjectHeader>
+        Here's what I've been working on:
+      </ProjectHeader>
+      <StyledProjectContainer>
+        {projectsData.map((entry, index) => {
+          if (index % 2 === 0) {
+            return (
+              <LeftProject key={entry.id}>
+                <Project entry={entry} isRight={false} />
+              </LeftProject>
+            );
+          } else {
+            return (
+              <RightProject key={entry.id}>
+                <Project entry={entry} isRight={true} />
+              </RightProject>
+            );
+          }
+        })}
+      </StyledProjectContainer>
+    </div>
   );
 }
