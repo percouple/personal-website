@@ -25,7 +25,7 @@ const StyledCorner = styled.div`
   position: absolute;
   width: 384px;
   height: 46px;
-  top: 420px;
+  top: 344px;
   background-color: #5C95FF;
   z-index: -1;
   margin-left: 135px;

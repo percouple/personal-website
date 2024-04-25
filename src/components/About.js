@@ -84,7 +84,7 @@ const PortraitLinerBackground = styled.div`
 
 export default function About() {
   return (
-    <div id="about" style={{ scrollMarginTop: "20vh" }}>
+    <div id="about" style={{ scrollMarginTop: "10vh", paddingLeft: "3rem" }}>
       <div
         style={{
           display: "flex",

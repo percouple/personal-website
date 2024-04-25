@@ -4,7 +4,7 @@ import {
   StyledButton,
   StyledInputField,
 } from "../../styles/universalStyles";
-import IconButton from "./IconButton";
+import IconButton from "../IconButton";
 import * as data from '../../data/site-data';
 
 const SubjectField = styled(StyledInputField)`

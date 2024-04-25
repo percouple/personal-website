@@ -13,14 +13,18 @@ body {
   
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  scrollbar-width: auto;
-
+  scrollbar-width: none;
 }
 /* 'Space Grotesk', 'Cormorant Garamond', 'Playfair Display' */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+::-webkit-scrollbar{
+  background-color: #222222;
+  width: 0px;
 }
 
 

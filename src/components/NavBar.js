@@ -8,7 +8,6 @@ const StyledNav = styled.div`
   background-color: #bdc4a7;
   width: 100vw;
   height: auto;
-  margin-bottom: 2rem;
   padding-top: 0.5rem;
   position: sticky;
   top: 0px;
@@ -30,7 +29,7 @@ const NavButton = styled.button`
   color: #bdc4a7;
   background-color: #317a23;
   box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.3);
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, color .5s ease;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.5s ease;
 
   &:hover {
     background-color: #5c95ff;
@@ -42,6 +41,7 @@ const NavButton = styled.button`
 const NavButtonContainer = styled.div`
   display: flex;
   justify-content: space-around;
+  margin-right: 1rem;
 `;
 
 export default function NavBar() {

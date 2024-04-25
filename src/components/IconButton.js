@@ -5,6 +5,7 @@ export const IconButtonStyle = styled.button`
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding-top: 1rem;
 `;
 
 export default function IconButton({data}) {
