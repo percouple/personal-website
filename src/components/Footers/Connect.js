@@ -1,33 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import {
-  StyledButton,
-  StyledInputField,
-} from "../../styles/universalStyles";
 import IconButton from "../IconButton";
 import * as data from '../../data/site-data';
-
-const SubjectField = styled(StyledInputField)`
-  min-height: 1.25rem;
-  min-width: 15rem;
-  max-width: 1rem;
-  max-height: 1rem;
-  margin-bottom: 0.5rem;
-`;
-
-const MessageField = styled(StyledInputField)`
-  min-height: 5rem;
-  min-width: 10rem;
-  margin-bottom: 0.5rem;
-  /* max-width: 1rem; */
-  /* max-height: 1rem; */
-`;
-
-const SubmitButton = styled(StyledButton)`
-  min-height: 2rem;
-  min-width: 10rem;
-  margin-bottom: 0.5rem;
-`;
+import Footer from './Footer'
+import ConnectForm from "./ConnectForm";
 
 const FormSocialContainer = styled.div`
   display: grid;
@@ -35,12 +11,6 @@ const FormSocialContainer = styled.div`
   margin: auto;
   max-width: 50rem;
   justify-content: center;
-`;
-
-const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-right: 2rem;
 `;
 
 const SocialContainer = styled.div`
@@ -53,6 +23,7 @@ const initialValues = {
   subject: "",
   message: "",
 };
+
 
 export default function Connect() {
   let [values, setValues] = useState(initialValues);
@@ -93,21 +64,10 @@ export default function Connect() {
       <h3>Questions? Or looking to collaborate?</h3>
       <h4>Connect with me here!</h4>
       <FormSocialContainer>
-        <FormContainer>
-          <SubjectField placeholder="Subject" onChange={changeHandler}></SubjectField>
-          <MessageField
-            placeholder="Message"
-            onChange={changeHandler}
-          ></MessageField>
-          <SubmitButton onClick={submitHandler}>Open Mail</SubmitButton>
-        </FormContainer>
-        <SocialContainer>
-          {data.iconLinks.map((icon) => {
-            return <IconButton key={icon.id} data={icon}/>
-          })}
-        </SocialContainer>
+        <ConnectForm changeHandler={changeHandler} submitHandler={submitHandler}></ConnectForm>
       </FormSocialContainer>
-      <p>Full Tech stack?</p>
+      <Footer />
+      
     </div>
   );
 }
