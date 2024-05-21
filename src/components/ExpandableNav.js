@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
+import NavStack from '../data/icons/NavStack.svg';
 
 const StyledNav = styled.div`
   display: flex;
@@ -47,6 +48,9 @@ const NavButtonContainer = styled.div`
 `;
 
 export default function NavBar() {
+
+    let [navOpen, setNavOpen] = useState(false);
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     console.log(section);
@@ -55,18 +59,14 @@ export default function NavBar() {
     }
   };
 
+  useEffect(() => {
+    console.log(navOpen)
+  }, [navOpen]);
+
   return (
     <StyledNav>
       <div style={{ paddingLeft: "2rem" }}></div>
-      <NavButtonContainer>
-        {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("about")}>About</NavButton>
-        {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("projects")}>Projects</NavButton>
-        {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("connect")}>Connect</NavButton>
-        <NavButton onClick={() => scrollToSection("home")}>Top</NavButton>
-      </NavButtonContainer>
+      <img src={NavStack} onClick={() => setNavOpen(!navOpen)}></img>
     </StyledNav>
   );
 }

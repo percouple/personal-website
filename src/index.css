@@ -13,20 +13,18 @@ body {
   
   background-color: var(--primary-color);
   color: var(--secondary-color);
-  scrollbar-width: none;
+  min-width: 320px;
 }
 /* 'Space Grotesk', 'Cormorant Garamond', 'Playfair Display' */
+
+html {
+  font-size: 16px;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-::-webkit-scrollbar{
-  background-color: #222222;
-  width: 0px;
-}
-
 
 .cormorant-garamond-light {
   font-family: "Cormorant Garamond", serif;

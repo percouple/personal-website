@@ -4,7 +4,9 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Connect from "./components/Footers/Connect";
 import SocialLinks from "./components/SocialLinks";
+import ExpandableNav from './components/ExpandableNav';
 import styled from "styled-components";
+import React, { useState, useEffect } from "react";
 
 const PageStyle = styled.div`
   position: relative;
@@ -17,15 +19,11 @@ const BodyWithSide = styled.div`
   position: relative;
 `;
 
-
 const BodyStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   scroll-behavior: smooth;
-  min-width: 600px;
-  overflow: hidden;
-  overflow-y: scroll;
 `;
 
 const Scrollbar = styled.div`
@@ -33,21 +31,44 @@ const Scrollbar = styled.div`
 `;
 
 function App() {
-  return (
-    <PageStyle >
-      <NavBar />
-      <BodyWithSide>
-        <SocialLinks />
-        <BodyStyles>
-          <Home />
-          <About />
-          <Projects />
-          <Connect />
-        </BodyStyles>
-        <Scrollbar />
-      </BodyWithSide>
-    </PageStyle>
-  );
+
+  let [curScreenWidth, setCurScreenWidth] = useState(window.innerWidth);
+
+  window.addEventListener('resize', () => {
+    setCurScreenWidth(window.innerWidth);
+  })
+  
+  if (curScreenWidth > 766) {
+    return ( 
+      <PageStyle >
+        <NavBar />
+        <BodyWithSide>
+          <SocialLinks />
+          <BodyStyles>
+            <Home />
+            <About />
+            <Projects />
+            <Connect />
+          </BodyStyles>
+          <Scrollbar />
+        </BodyWithSide>
+      </PageStyle>
+    );
+  } else {
+    return (
+      <PageStyle >
+        <ExpandableNav/>
+          <BodyStyles>
+            <Home />
+            <About />
+            <Projects />
+            <Connect />
+          </BodyStyles>
+          <Scrollbar />
+      </PageStyle>
+    )
+  }
+
 }
 
 export default App;

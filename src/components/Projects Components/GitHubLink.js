@@ -8,13 +8,14 @@ const LinkButton = styled.button`
   margin-left: 0.5rem;
   background-color: var(--tertiary-highlight-color);
   color: var(--primary-color);
-  border: none;
+  border: #222222 2px solid;
   cursor: pointer;
-  transition: background-color 0.2s ease;
-  border-radius: 10px;
+  transition: background-color 0.2s ease, box-shadow 0.2s, transform 0.2s;
 
   &:hover {
     background-color: #317a23;
+    box-shadow: 0px 4px 0px #000000;
+    transform: translateY(-4px);
   }
 `;
 
