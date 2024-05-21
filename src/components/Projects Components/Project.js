@@ -1,11 +1,7 @@
 import React from "react";
 import LinkContainer from "./LinkContainer";
-import styled from 'styled-components';
 
-const StyledDescription = styled.div`
-  
-`;
-
+// TODO: Make collapsing description a user button
 export default function Project({ entry, isRight }) {
 
   return (
@@ -15,7 +11,7 @@ export default function Project({ entry, isRight }) {
         {entry.complete ? '' : "In progress"}
       </h5>
       <div style={{ marginBottom: "1rem" }}>
-        {entry.description}
+        {window.innerWidth > 425 && entry.description}
       </div>
       <h5>{entry.stack}</h5>
       <LinkContainer entry={entry} isRight={isRight}/>
