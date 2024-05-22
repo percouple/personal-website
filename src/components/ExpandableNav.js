@@ -50,7 +50,7 @@ const NavButtonContainer = styled.div`
 `;
 
 const ExpanderButton = styled.img`
-  padding-right: 3px;
+  padding-right: 10px;
 `;
 
 export default function NavBar() {
@@ -74,12 +74,13 @@ export default function NavBar() {
         justifyContent: "space-between",
         position: "sticky",
         top: "0px",
-        paddingTop: '1rem',
         zIndex: "1000",
-        backgroundColor: '#222222'
+        backgroundColor: '#222222',
+        boxShadow: '0px 2px 0 #BDC4A7',
+        backgroundSize: '0 200px'
       }}
     >
-      <SocialLinks/>
+      <SocialLinks style={{border: '20px solid white'}}/>
       <ExpanderButton
         src={NavStack}
         onClick={() => setNavOpen(!navOpen)}

@@ -3,9 +3,10 @@ import styled from "styled-components";
 
 export const IconButtonStyle = styled.button`
   background-color: transparent;
-  border: none;
+  border: solid #5C95FF 1px;
   cursor: pointer;
-  padding-top: 1rem;
+  margin: 2px;
+  padding-top: 4px;
 `;
 
 export default function IconButton({data}) {

@@ -9,15 +9,15 @@ export default function LinkContainer({ entry, isRight }) {
   if (isRight) {
     return (
       <StyledLinkContainer>
-        <GitHubLink entry={entry} />
-        <GoButton entry={entry} />
+        {entry.url && <GoButton entry={entry} />}
+        {entry.githubUrl && <GitHubLink entry={entry} />}
       </StyledLinkContainer>
     );
   } else {
     return (
       <StyledLinkContainer>
-        <GoButton entry={entry}/>
         <GitHubLink entry={entry}/>
+        <GoButton entry={entry}/>
       </StyledLinkContainer>
     );
   }

@@ -29,7 +29,7 @@ export const projectsData = [
   {
     id: 2,
     date: "01-30-2024",
-    complete: false,
+    complete: true,
     name: "NASA Image Generator",
     url: false,
     githubUrl: "https://github.com/percouple/NASA-photo-of-the-day",
