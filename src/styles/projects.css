@@ -47,10 +47,19 @@
 .project-header {
     margin-top: 15rem;
     scroll-margin-top: 5rem;
-    margin-left: 1rem;
+    margin-left: 6rem;
+    padding-left: 14px;
+    padding-top: 8px;
+    box-shadow: -6px -3px 0 var(--secondary-highlight-color);
+    background-color: #222222;
+    max-width: 33%;
 }
 
 /* smartphone */
 @media (max-width: 425px) {
-    
+    .project-header {
+        font-size: 1.25rem;
+        max-width: 150px;
+        margin-left: 60px;
+    }
 }

@@ -9,7 +9,7 @@
 
 .about-text {
   font-weight: 900;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-right: 10%;
   text-align: right;
   background-color: #222222;
@@ -29,7 +29,7 @@
 .about-paragraph {
   max-height: auto;
   max-width: 300px;
-  font-size: 1.25rem;
+  font-size: 1rem;
   padding: 14px;
   background-color: #bdc4a7;
   color: #222222;

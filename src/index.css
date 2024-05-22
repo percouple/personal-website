@@ -16,9 +16,20 @@ body {
   min-width: 320px;
 }
 /* 'Space Grotesk', 'Cormorant Garamond', 'Playfair Display' */
-
 html {
   font-size: 16px;
+}
+
+@media (min-width: 425px) and (max-width: 860px) {
+  html {
+    font-size: 12px; 
+  }
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 12px; 
+  }
 }
 
 code {
