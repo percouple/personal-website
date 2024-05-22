@@ -1,10 +1,10 @@
-import NavBar from "./components/NavBar";
+import NavBar from "./components/Nav/NavBar";
 import About from "./components/About";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Connect from "./components/Footers/Connect";
 import SocialLinks from "./components/SocialLinks";
-import ExpandableNav from './components/ExpandableNav';
+import ExpandableNav from './components/Nav/ExpandableNav';
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 

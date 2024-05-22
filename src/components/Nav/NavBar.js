@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { NavButton } from "../../styles/universalStyles";
 
 const StyledNav = styled.div`
   display: flex;
@@ -16,28 +17,13 @@ const StyledNav = styled.div`
   min-width: 600px;
 `;
 
-const NavButton = styled.button`
-  cursor: pointer;
+const FullNavButton = styled(NavButton)`
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 1rem;
   min-height: 1rem;
   min-width: 5rem;
-  border: black 2px solid;
-  font-family: "Space Grotesk";
-  font-weight: 700;
   font-size: 1.25rem;
-  color: #bdc4a7;
-  background-color: #317a23;
-  box-shadow: 1px 1px 10px rgba(100, 100, 100, 0.3);
-  transition: background-color 0.2s ease, box-shadow 0.2s, color 0.5s ease, transform 0.2s;
-
-  &:hover {
-    background-color: #5c95ff;
-    box-shadow: 0px 4px 0 #000000;
-    color: #222222;
-    transform: translate(0px, -4px);
-  }
 `;
 
 const NavButtonContainer = styled.div`
@@ -60,12 +46,12 @@ export default function NavBar() {
       <div style={{ paddingLeft: "2rem" }}></div>
       <NavButtonContainer>
         {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("about")}>About</NavButton>
+        <FullNavButton onClick={() => scrollToSection("about")}>About</FullNavButton>
         {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("projects")}>Projects</NavButton>
+        <FullNavButton onClick={() => scrollToSection("projects")}>Projects</FullNavButton>
         {/* prettier-ignore */}
-        <NavButton onClick={() => scrollToSection("connect")}>Connect</NavButton>
-        <NavButton onClick={() => scrollToSection("home")}>Top</NavButton>
+        <FullNavButton onClick={() => scrollToSection("connect")}>Connect</FullNavButton>
+        <FullNavButton onClick={() => scrollToSection("home")}>Top</FullNavButton>
       </NavButtonContainer>
     </StyledNav>
   );

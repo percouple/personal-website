@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import NavStack from "../data/icons/NavStack.svg";
-import SocialLinks from "./SocialLinks";
+import NavStack from "../../data/icons/NavStack.svg";
+import SocialLinks from "../SocialLinks";
+
+const ExpandedNav = styled.div``;
 
 // const StyledNav = styled.div`
 //   display: flex;
@@ -68,24 +70,27 @@ export default function NavBar() {
   }, [navOpen]);
 
   return (
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        position: "sticky",
-        top: "0px",
-        zIndex: "1000",
-        backgroundColor: '#222222',
-        boxShadow: '0px 2px 0 #BDC4A7',
-        backgroundSize: '0 200px'
-      }}
-    >
-      <SocialLinks style={{border: '20px solid white'}}/>
-      <ExpanderButton
-        src={NavStack}
-        onClick={() => setNavOpen(!navOpen)}
-        alt="menu expander"
-      ></ExpanderButton>
-    </div>
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          position: "sticky",
+          top: "0px",
+          zIndex: "1000",
+          backgroundColor: "#222222",
+          boxShadow: "0px 2px 0 #BDC4A7",
+          backgroundSize: "0 200px",
+        }}
+      >
+        <SocialLinks style={{ border: "20px solid white" }} />
+        <ExpanderButton
+          src={NavStack}
+          onClick={() => setNavOpen(!navOpen)}
+          alt="menu expander"
+        ></ExpanderButton>
+      </div>
+      {navOpen && <ExpandedNav></ExpandedNav>}
+    </>
   );
 }
