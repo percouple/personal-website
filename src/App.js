@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Connect from "./components/Footers/Connect";
 import SocialLinks from "./components/SocialLinks";
-import ExpandableNav from './components/Nav/ExpandableNav';
+import DropdownNav from './components/Nav/dropdownNav';
 import styled from "styled-components";
 import React, { useState, useEffect } from "react";
 
@@ -57,7 +57,7 @@ function App() {
   } else {
     return (
       <PageStyle >
-        <ExpandableNav/>
+        <DropdownNav/>
           <BodyStyles>
             <Home />
             <About />

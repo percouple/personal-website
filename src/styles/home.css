@@ -38,6 +38,10 @@
 
 /* smartphone */
 @media (max-width: 425px) {
+  .intro-container {
+    margin-top: 9rem;
+  }
+
   .welcome-paragraph {
     max-width: 280px;
     margin-right: 50px;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const IconButtonStyle = styled.button`
   background-color: transparent;
-  border: solid #5C95FF 1px;
+  border: solid #5C95FF 2px;
   cursor: pointer;
   margin: 2px;
   padding-top: 4px;
