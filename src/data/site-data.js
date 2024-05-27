@@ -31,7 +31,7 @@ export const projectsData = [
     date: "01-30-2024",
     complete: true,
     name: "NASA Image Generator",
-    url: false,
+    url: 'https://nasa-search-bkgd8486y-calebs-projects-599a8c0f.vercel.app/',
     githubUrl: "https://github.com/percouple/NASA-photo-of-the-day",
     description:
       "Generates publicly available images of NASA, astronauts, space, and more using axios to fetch from the NASA API.",
@@ -86,3 +86,7 @@ export const blogData = [
     imgUrl: "https://picsum.photos/200/200",
   },
 ];
+
+export const techStack = [
+  'JavaScript', 'Java', 'HTML5', 'CSS3', 'React.js', 'Node.js', 'Next.js'
+]

@@ -1,13 +1,9 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import IconButton from "../IconButton";
-import * as data from '../../data/site-data';
 import Footer from './Footer'
 import ConnectForm from "./ConnectForm";
 
 const FormSocialContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   margin: auto;
   max-width: 50rem;
   justify-content: center;
